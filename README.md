@@ -1,2 +1,2 @@
-# sweeetsgeniu.github.io
+# sweetsgeniu.github.io
 cloned from mackenzielu
