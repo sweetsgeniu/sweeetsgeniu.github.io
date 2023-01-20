@@ -161,5 +161,19 @@ window.onload=function starttime(){
         }
 setInterval("toggleSound()",1);
 </script>
+<script>
+    //添加侦听时间，DOM加载完后执行。
+    document.addEventListener('DOMContentLoaded', function() {
+	function audioAutoPlay() {
+	    var bgmusic = document.getElementById('bgmusic');
+	    bgmusic.play();
+            //侦听微信ready事件。
+	    document.addEventListener("WeixinJSBridgeReady", function() {
+		bgmusic.play();
+	    }, false);
+	}
+	audioAutoPlay();
+    });
+</script>
 </body>
 </html>
